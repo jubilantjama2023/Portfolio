@@ -1,5 +1,6 @@
 import CanvasAnimation from "./CanvasAnimation";
 import { TypeAnimation } from "react-type-animation";
+import Button from "./Button";
 
 function BounceText({ text }) {
   return (
@@ -40,9 +41,10 @@ function Hero() {
           React, JavaScript, and AWS.
         </p>
 
-        <button className="hero-btn">
-          View My Work
-        </button>
+        <div className="hero-buttons">
+          <Button>View My Work</Button>
+          <Button variant="secondary">Get in touch</Button>
+        </div>
 
       </div>
 
