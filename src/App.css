@@ -164,13 +164,12 @@
   border-bottom: 1px solid #f0ede5;
   background: var(--bg);
   padding: 0px 0px;
-  margin-right: 40px;
-  margin-left: 40px;
+  
 }
 
 /* Logo */
 .logo {
-  font-size: 40px;
+  font-size: 20px;
   font-weight: bold;
   color: #9ca3af;
 }
@@ -314,6 +313,92 @@
   display: flex;
   gap: 16px; /* space between buttons */
   margin-top: 20px;
+}
+
+.about-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1700px;
+  text-align: left;
+  margin-left: 30px;
+}
+/* Heading */
+.about-paragraph{
+  font-size: 30px;
+  margin-bottom: 16px;
+  color: #19191b
+}
+.about-label{
+  font-size: 23px;
+  margin-bottom: 16px;
+  color: #aa3bff
+}
+.about-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.side-paragraph {
+  text-align: left;
+  margin-top: 40px;
+  max-width: 1300px;
+  
+}
+
+.right-bar{
+  margin-left: 40px;
+}
+
+.about-image {
+  margin-top: 40px;
+  width: 260px;
+  height: 300px;
+  border-radius: 12px;
+}
+.skills {
+  margin-top: 40px;
+}
+
+/* Group Layout */
+.skill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+/* Label */
+.skill-label {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color: #a69b87;
+  margin: 20px 0 10px;
+}
+
+/* Default Pills (Purple style) */
+.skill-pill {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid #a9a6ff;
+  color: #4b4bd4;
+  background: rgba(169, 166, 255, 0.1);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Green Pills */
+.skill-pill.green {
+  border-color: #6bd3a7;
+  color: #1e7a59;
+  background: rgba(107, 211, 167, 0.15);
+}
+
+.skill-pill.yellow{
+  border-color: #aac349;
+  color: #353e09;
+  background: rgba(220, 232, 135, 0.15);
 }
 
 @keyframes bounce {
