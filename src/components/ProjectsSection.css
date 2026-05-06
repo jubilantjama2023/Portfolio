@@ -1,0 +1,127 @@
+:root {
+  --bg: #f7f6f2;
+  --bg-alt: #ffffff;
+  --border: #dddbd3;
+  --text: #1a1a1a;
+  --muted: #888780;
+  --dim: #b4b2a9;
+
+  --accent: #534ab7;
+  --accent-light: #eeedfe;
+  --accent-mid: #afa9ec;
+  --accent-dark: #3c3489;
+
+  --green: #1d9e75;
+  --green-light: #e1f5ee;
+  --green-dark: #085041;
+
+  --amber-light: #faeeda;
+  --amber-dark: #633806;
+
+  --gray: #f1efe8;
+  --gray-border: #d3d1c7;
+}
+
+.projects {
+  padding: 72px 40px;
+  background: var(--bg);
+  font-family: "DM Sans", system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  margin: 36px 0;
+  flex-wrap: wrap;
+}
+
+.filter-tab {
+  padding: 7px 18px;
+  border-radius: 20px;
+  border: 0.5px solid var(--border);
+  background: transparent;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.filter-tab.active {
+  background: var(--accent-light);
+  border-color: var(--accent-mid);
+  color: var(--accent-dark);
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 36px;
+  padding: 36px;
+  background: var(--bg-alt);
+  border: 0.5px solid var(--border);
+  border-radius: 10px;
+}
+
+.project-card.featured {
+  background: #faf9ff;
+}
+
+.preview {
+  height: 170px;
+  border-radius: 8px;
+  background: var(--bg);
+  border: 0.5px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.stack-pill {
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  background: var(--gray);
+  border: 0.5px solid var(--gray-border);
+}
+
+.outcome {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.outcome-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--green-light);
+  border: 0.5px solid var(--green);
+}
+
+footer {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 0.5px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}

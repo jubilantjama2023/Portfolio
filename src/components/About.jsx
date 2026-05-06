@@ -1,6 +1,8 @@
 import Button from "./Button";
 import Skills from "./Skills";
 import profileImg from "../assets/hero.png";
+import Timeline from "./Timeline";
+
 function About() {
   return (
     <section className="about">
@@ -25,34 +27,27 @@ function About() {
         {/* NEW WRAPPER */}
         <div className="about-row">
 
-          {/* IMAGE */}
-          <img
-            src={profileImg}   // put your image in public folder
-            alt="Developer portrait"
-            className="about-image"
-          />
-          <div className="right-bar">
-            <p className="side-paragraph">
-              I'm a junior developer based in Johannesburg, currently building production tools at LNP Beyond Legal.
-              I work across the full stack — from Power Apps and automation flows to JavaScript front-ends and AI-assisted workflows. 
-              I care about software that actually gets used, not just shipped.
-            </p>
+            {/* IMAGE */}
+            <img
+              src={profileImg}   // put your image in public folder
+              alt="Developer portrait"
+              className="about-image"
+            />
+            <div className="right-bar">
+              <p className="side-paragraph">
+                I'm a junior developer based in Johannesburg, currently building production tools at LNP Beyond Legal.
+                I work across the full stack — from Power Apps and automation flows to JavaScript front-ends and AI-assisted workflows. 
+                I care about software that actually gets used, not just shipped.
+              </p>
 
-            <Skills/>
+              <Skills/>
+              <Timeline />
+          </div>
+        
         </div>
 
-          
-
-      </div>
 
 
-
-
-
-        <div className="hero-buttons">
-          <Button>View My Work</Button>
-          <Button variant="secondary">Get in touch</Button>
-        </div>
 
      </div>
 
