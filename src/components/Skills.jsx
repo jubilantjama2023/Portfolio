@@ -1,34 +1,27 @@
 function Skills() {
   return (
     <div className="skills">
-
-      <p className="skill-label">BUILD WITH</p>
-      {/* Top Skills */}
-      <div className="skill-group">
-        <span className="skill-pill">JavaScript</span>
-        <span className="skill-pill">Python</span>
-        <span className="skill-pill">HTML/CSS</span>
-        <span className="skill-pill">Power Apps</span>
+      <p className="skills__label">Build with</p>
+      <div className="skills__group">
+        <span className="pill pill--accent">JavaScript</span>
+        <span className="pill pill--accent">Python</span>
+        <span className="pill pill--accent">HTML / CSS</span>
+        <span className="pill pill--accent">Power Apps</span>
       </div>
 
-      {/* Section Label */}
-      <p className="skill-label">AUTOMATE WITH</p>
-
-      {/* Automation Tools */}
-      <div className="skill-group">
-        <span className="skill-pill green">Power Automate</span>
-        <span className="skill-pill green">n8n</span>
-        <span className="skill-pill green">Langflow</span>
-      </div>
-      
-      <p className="skill-label">DEPLOY ON</p>
-      <div className="skill-group">
-        <span className="skill-pill yellow">AWS</span>
-        <span className="skill-pill yellow">Sharepoint</span>
-        <span className="skill-pill yellow">Microsoft 365</span>
+      <p className="skills__label">Automate with</p>
+      <div className="skills__group">
+        <span className="pill pill--green">Power Automate</span>
+        <span className="pill pill--green">n8n</span>
+        <span className="pill pill--green">Langflow</span>
       </div>
 
-
+      <p className="skills__label">Deploy on</p>
+      <div className="skills__group">
+        <span className="pill pill--amber">AWS</span>
+        <span className="pill pill--amber">SharePoint</span>
+        <span className="pill pill--amber">Microsoft 365</span>
+      </div>
     </div>
   );
 }

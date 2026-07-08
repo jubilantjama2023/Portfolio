@@ -1,13 +1,23 @@
 function Navbar() {
-  return (
-    <nav className="navbar">
-      <h1 className="logo">JC</h1>
+  const links = [
+    { href: "#home", label: "Home" },
+    { href: "#about", label: "About" },
+    { href: "#projects", label: "Projects" },
+    { href: "#blog", label: "Blog" },
+    { href: "#contact", label: "Contact" },
+  ];
 
-      <ul className="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+  return (
+    <nav className="navbar" aria-label="Primary navigation">
+      <a className="navbar__logo" href="#home" aria-label="Jubilant Chikukwa home">
+        JC
+      </a>
+      <ul className="navbar__links">
+        {links.map((link) => (
+          <li key={link.href}>
+            <a href={link.href}>{link.label}</a>
+          </li>
+        ))}
       </ul>
     </nav>
   );

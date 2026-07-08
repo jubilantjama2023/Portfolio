@@ -86,7 +86,7 @@ function CanvasAnimation() {
   return (
     <canvas
       ref={canvasRef}
-      className="hero-canvas"
+      className="hero__canvas"
     />
   );
 }
