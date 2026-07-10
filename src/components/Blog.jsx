@@ -1,26 +1,5 @@
-const posts = [
-  {
-    title: "How I Think About Useful Automation",
-    date: "Coming soon",
-    tag: "Automation",
-    excerpt:
-      "A practical note on choosing workflows that remove real friction instead of adding another system for people to maintain.",
-  },
-  {
-    title: "Building Legal Tools People Actually Use",
-    date: "Coming soon",
-    tag: "Product",
-    excerpt:
-      "Lessons from turning messy operational needs into clear interfaces, reliable flows, and better day-to-day visibility.",
-  },
-  {
-    title: "From Frontend Polish to Business Impact",
-    date: "Coming soon",
-    tag: "Frontend",
-    excerpt:
-      "Why small UI decisions matter when a dashboard or portal becomes part of someone's daily work rhythm.",
-  },
-];
+import { Link } from "react-router-dom";
+import { posts } from "../posts";
 
 function Blog() {
   return (
@@ -36,15 +15,15 @@ function Blog() {
 
         <div className="blog__grid">
           {posts.map((post) => (
-            <article className="blog-card" key={post.title}>
+            <Link className="blog-card" key={post.slug} to={`/blog/${post.slug}`}>
               <div className="blog-card__meta">
                 <span>{post.tag}</span>
                 <span>{post.date}</span>
               </div>
               <h3>{post.title}</h3>
               <p>{post.excerpt}</p>
-              <span className="blog-card__status">Draft planned</span>
-            </article>
+              <span className="blog-card__status">Read more →</span>
+            </Link>
           ))}
         </div>
       </div>

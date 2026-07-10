@@ -6,6 +6,7 @@ function Hero() {
     { value: "5+", label: "production tools" },
     { value: "React", label: "frontend builds" },
     { value: "Power Platform", label: "business systems" },
+    { value: "AWS", label: "Cloud Computing" },
     { value: "Johannesburg", label: "based developer" },
   ];
 
@@ -15,20 +16,19 @@ function Hero() {
 
       <div className="hero__inner">
         <div className="hero__content">
-          <p className="hero__eyebrow">Frontend developer / Automation builder</p>
+          <p className="hero__eyebrow">Backend developer / Automation builder / System Developer</p>
           <h1>Jubilant Chikukwa</h1>
 
           <p>
-            Johannesburg-based developer building polished frontend tools, Power
-            Platform systems, and practical automation workflows for real
-            operational problems.
+            Johannesburg-based developer building polished tools, Systems, and practical automation workflows for real
+            operational problems. A lover of automation and Cloud.
           </p>
 
           <div className="hero__buttons">
             <Button href="#projects">View My Work</Button>
             <Button href="#contact" variant="secondary">Get in touch</Button>
             <Button
-              href="mailto:jubilant.chikukwa@example.com?subject=CV%20request"
+              href="mailto:jpchikukwa@gmail.com?subject=CV%20request"
               variant="secondary"
             >
               Request CV
@@ -45,7 +45,7 @@ function Hero() {
           </div>
         </div>
 
-        <aside className="hero-visual" aria-label="Frontend and automation workflow visual">
+        <aside className="hero-visual" aria-label="Deployment terminal visual">
           <div className="hero-visual__window">
             <div className="hero-visual__bar">
               <span />
@@ -53,19 +53,12 @@ function Hero() {
               <span />
             </div>
 
-            <div className="workflow-node workflow-node--primary">
-              <span>Design</span>
-              <strong>Interface</strong>
-            </div>
-            <div className="workflow-line" />
-            <div className="workflow-node">
-              <span>Build</span>
-              <strong>React app</strong>
-            </div>
-            <div className="workflow-line workflow-line--short" />
-            <div className="workflow-node">
-              <span>Automate</span>
-              <strong>Business flow</strong>
+            <div className="hero-terminal">
+              <p><span className="hero-terminal__prompt">$</span> deploy --flow automation</p>
+              <p className="hero-terminal__log">→ building interface...</p>
+              <p className="hero-terminal__log">→ compiling react app...</p>
+              <p><span className="hero-terminal__ok">✓</span> business flow live</p>
+              <p className="hero-terminal__cursor"><span className="hero-terminal__prompt">$</span> <span>_</span></p>
             </div>
 
             <div className="hero-visual__chips">
@@ -73,6 +66,12 @@ function Hero() {
               <span>AWS</span>
               <span>Power Apps</span>
               <span>SharePoint</span>
+              <span>React</span>
+              <span>HTML</span>
+              <span>Node.js</span>
+              <span>Python</span>
+              <span>MongoDB</span>
+              <span>SQL</span>
             </div>
           </div>
         </aside>

@@ -6,29 +6,25 @@ function Footer() {
           <p className="eyebrow">Contact</p>
           <h2>Let's build something useful.</h2>
           <p>
-            Want help turning manual work into a clean internal tool? I work on
-            frontend projects, Power Platform systems, and practical AI-assisted
-            workflows.
+            Want help turning manual work into a clean internal tool? Get in Touch
           </p>
         </div>
 
         <div className="footer__links" aria-label="Contact links">
-          <a href="mailto:jubilant.chikukwa@example.com">Email</a>
-          <a href="mailto:jubilant.chikukwa@example.com?subject=CV%20request">
+          <a href="mailto:jpchikukwa@gmail.com">Email</a>
+          <a href="mailto:jpchikukwa@gmail.com?subject=CV%20request">
             Request CV
           </a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/jubilant-p-chikukwa-29305b267?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noreferrer">
             LinkedIn
           </a>
-          <a href="https://github.com/" target="_blank" rel="noreferrer">
-            GitHub
-          </a>
+         
         </div>
       </div>
 
       <div className="footer__bottom">
         <span>Jubilant Chikukwa</span>
-        <span>Frontend Developer / Johannesburg</span>
+        <span>Backend Developer / Johannesburg</span>
       </div>
     </footer>
   );

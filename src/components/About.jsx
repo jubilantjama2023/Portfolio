@@ -5,17 +5,17 @@ const certifications = [
   {
     issuer: "AWS",
     title: "AWS Certified Cloud Practitioner",
-    href: "#",
+    href: "https://www.credly.com/badges/0c46f72e-6aeb-4ec2-b146-f6196f4abb0f/public_url",
   },
   {
     issuer: "AWS",
     title: "AWS Certified Solutions Architect",
-    href: "#",
+    href: "https://www.credly.com/badges/d18d91f4-03e9-4844-b1c2-5307904e34d3/public_url",
   },
   {
     issuer: "Microsoft",
     title: "Power Automate Certification",
-    href: "#",
+    href: "https://udemy-certificate.s3.amazonaws.com/image/UC-0e4aa089-b85b-4cf1-b5a8-b4bedb0e35e4.jpg",
   },
 ];
 
@@ -39,13 +39,23 @@ function About() {
           <div className="certifications">
             <p className="skills__label">Certifications</p>
             <div className="certifications__list">
-              {certifications.map((cert) => (
-                <a className="certification-card" href={cert.href} key={cert.title}>
-                  <span>{cert.issuer}</span>
-                  <strong>{cert.title}</strong>
-                  <em>Credential link placeholder</em>
-                </a>
-              ))}
+              {certifications.map((cert) => {
+                const hasCredentialLink = cert.href !== "#";
+
+                return (
+                  <a
+                    className="certification-card"
+                    href={cert.href}
+                    key={cert.title}
+                    rel={hasCredentialLink ? "noreferrer" : undefined}
+                    target={hasCredentialLink ? "_blank" : undefined}
+                  >
+                    <span>{cert.issuer}</span>
+                    <strong>{cert.title}</strong>
+                    <em>{hasCredentialLink ? "View credential" : "Credential link placeholder"}</em>
+                  </a>
+                );
+              })}
             </div>
           </div>
 
