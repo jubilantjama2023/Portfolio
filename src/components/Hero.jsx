@@ -20,8 +20,9 @@ function Hero() {
           <h1>Jubilant Chikukwa</h1>
 
           <p>
-            Johannesburg-based developer building polished tools, Systems, and practical automation workflows for real
-            operational problems. A lover of automation and Cloud.
+            Johannesburg-based developer building scalable backend systems, cloud applications, and practical 
+            automation solutions for real-world problems. Passionate about AWS, APIs, system design, and creating 
+            software that makes work more efficient.
           </p>
 
           <div className="hero__buttons">
