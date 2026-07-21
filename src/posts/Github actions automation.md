@@ -2,6 +2,7 @@
 title: "Using GitHub Actions to deploy to S3 and CloudFront"
 date: "2026-07-21"
 tag: "Automation"
+category: "Deployment"
 excerpt: "From Manual Uploads to One Push: Automating My React Portfolio Deploy with GitHub Actions"
 ---
 

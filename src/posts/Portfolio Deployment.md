@@ -2,6 +2,7 @@
 title: "Deploying on AWS with S3, CloudFront, ACM and GoDaddy"
 date: "2026-07-14"
 tag: "Deployment"
+category: "Deployment"
 excerpt: "From Localhost to Production: Deploying My React Portfolio on AWS with S3, CloudFront, ACM and GoDaddy"
 ---
 

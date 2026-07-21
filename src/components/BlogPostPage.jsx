@@ -9,9 +9,9 @@ function BlogPostPage() {
 
   if (!post) return <Navigate to="/" replace />;
 
-  return (
-    <div className="blog-post-layout">
-      <BlogTopicNav />
+    return (
+      <div className="blog-post-layout">
+      <BlogTopicNav key={slug} />
 
       <section className="blog-post" id="blog-post">
         <div className="blog-post__inner">
