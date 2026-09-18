@@ -5,7 +5,7 @@ date: "2026-08-28"
 tag: "Microsoft Graph"
 category: "Integration"
 excerpt: "Connecting a Python application to my Microsoft mailbox using Microsoft Graph, Azure Identity and OAuth authentication."
-----------------------------------------------------------------------------------------------------------------------------------
+---
 
 After getting my portfolio deployed on AWS, I wanted to work on something different: connecting an application directly to my mailbox.
 
